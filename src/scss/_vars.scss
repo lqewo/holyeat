@@ -1,0 +1,10 @@
+@mixin btn {
+	border-radius: 50px;
+}
+
+@mixin title {
+	font-weight: 800;
+	font-size: 30px;
+	line-height: 129%;
+	color: #151519;
+}

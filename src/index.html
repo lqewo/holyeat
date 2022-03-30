@@ -1,13 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-@@include('html/head.html', {
-	"title":"Главная"
-})
-<body>
-	@@include('html/header.html', {})
-	<main>
-	</main>
-	@@include('html/footer.html', {})
-	<script src="js/app.min.js"></script>
-</body>
+	@@include('html/head.html', { "title":"DIETOLOGONLINE" })
+	<body>
+		@@include('html/header.html', {})
+		<main>
+			<section class="problem">
+				<div class="container">
+					<div class="problem__title">Проблеми бігу без дієти</div>
+					<div class="problem__inner">
+						<div class="problem__inner-item">
+							<div class="item__img">
+								<img class="svg-lamp-dims" src="@img/icons.svg#lamp" alt="" />
+							</div>
+							<div class="item__title">Нестача енергії</div>
+							<div class="item__text">
+								Неправильний раціон – нестача енергії/надмірне навантаження на
+								організм
+							</div>
+						</div>
+						<div class="problem__inner-item">
+							<div class="item__img">
+								<img class="svg-share-dims" src="@img/icons.svg#share" alt="" />
+							</div>
+							<div class="item__title">Порушення метаболізму</div>
+							<div class="item__text">
+								Відмова від обіду після тренування – порушення метаболізму,
+								ефективність тренування 0
+							</div>
+						</div>
+						<div class="problem__inner-item">
+							<div class="item__img">
+								<img
+									class="svg-scales-dims"
+									src="@img/icons.svg#scales"
+									alt=""
+								/>
+							</div>
+							<div class="item__title">При недоїданні</div>
+							<div class="item__text">
+								Низька ефективність тренування, ризик запаморочення
+							</div>
+						</div>
+						<div class="problem__inner-item">
+							<div class="item__img">
+								<img class="svg-timer-dims" src="@img/icons.svg#timer" alt="" />
+							</div>
+							<div class="item__title">Зайва вага</div>
+							<div class="item__text">
+								Надмірне навантаження на суглоби вашого тіла, коліна
+							</div>
+						</div>
+						<div class="problem__inner-item">
+							<div class="item__img">
+								<img class="svg-cake-dims" src="@img/icons.svg#cake" alt="" />
+							</div>
+							<div class="item__title">Важко бігти</div>
+							<div class="item__text">
+								При переїданні – біль у печінці, порушення кровотоку
+							</div>
+						</div>
+						<div class="problem__inner-item">
+							<div class="item__img">
+								<img
+									class="svg-hearth-dims"
+									src="@img/icons.svg#hearth"
+									alt=""
+								/>
+							</div>
+							<div class="item__title">Порушення гідробалансу</div>
+							<div class="item__text">
+								Ризик запаморочення, порушення роботи серця, загущення крові
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="result">
+				<div class="container">
+					<div class="result__inner">
+						<img src="img/result.png" alt="" />
+						<div class="wrapper">
+							<div class="wrapper__title">Кращий результат</div>
+							<div class="wrapper__subtitle">
+								Правильне харчування дійсно працює
+							</div>
+							<div class="wrapper__text">
+								При неправильному харчуванні спорт може бути шкідливим для
+								здоров’я. І навпаки – збалансований раціон, розроблений з
+								урахування індивідуальних особливостей людини, допомагає не лише
+								схуднути і отримати чудове тіло, а й досягти неймовірних
+								результатів у спорті
+							</div>
+							<div class="wrapper__btn">Обрати дієтолога</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="work">
+				<div class="container">
+					<div class="work__title">Як це працює ?</div>
+					<div class="work__inner">
+						<div class="work__inner-item">
+							<div class="item__img">
+								<img class="item__img-img" src="@img/item1.png" alt="" />
+							</div>
+							<div class="item__title">Огляд вашої ситуації та цілей</div>
+							<ul class="item__list">
+								<li class="item__list-link">
+									Ми уважно вивчимо Вашу харчову поведінку, спосіб життя,
+									проблеми зі здоров'ям та цілі
+								</li>
+								<li class="item__list-link">
+									Ми приділяємо увагу всім факторам здоров'я, включаючи можливий
+									гормональний дисбаланс та індивідуальну непереносимість
+									продуктів харчування
+								</li>
+							</ul>
+						</div>
+						<div class="work__inner-item">
+							<div class="item__img">
+								<img class="item__img-img" src="@img/item2.png" alt="" />
+							</div>
+							<div class="item__title">Оберіть ідеального онлайн дієтолога</div>
+							<ul class="item__list">
+								<li class="item__list-link">
+									Оберіть персонального дієтолога зі списку, сформованого на
+									основі Вашої інформації з кроку 1
+								</li>
+								<li class="item__list-link">
+									Ви зможете ознайомитися з досвідом, включаючи професійний
+									стаж, освіту, професійні підходи та відгуки
+								</li>
+								<li class="item__list-link">
+									Ідеальний дієтолог постійно на зв'язку
+								</li>
+							</ul>
+						</div>
+						<div class="work__inner-item">
+							<div class="item__img">
+								<img class="item__img-img" src="@img/item3.png" alt="" />
+							</div>
+							<div class="item__title">Отримуйте підтримку та мотивацію</div>
+							<ul class="item__list">
+								<li class="item__list-link">
+									На основі Ваших уподобань, результатів за підсумками тижня та
+									потреб здоров'я план харчування оновлюватиметься щотижня
+								</li>
+								<li class="item__list-link">
+									Дієтолог завжди готовий скоригувати ваше меню у разі, якщо ви
+									відчуваєте нестачу в деяких продуктах харчування або просто
+									потяг до солодкого
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="vitamins">
+				<div class="container">
+					<div class="vitamins__title">Залежність харчування і спорту</div>
+					<div class="vitamins__wrapper">
+						<img class="vitamins__img" src="img/ration.png" alt="" />
+						<div class="vitamins__wrapper-inner">
+							<div class="vitamins__item">
+								<div class="item__img">
+									<img
+										class="svg-icon-1-dims"
+										src="@img/icons.svg#icon-1"
+										alt=""
+									/>
+								</div>
+								<div class="item__title">Залізо</div>
+								<div class="item__text">
+									Обумовлює витривалість і працездатність. Нестача заліза –
+									найпоширеніша проблема серед атлетів
+								</div>
+							</div>
+							<div class="vitamins__item">
+								<div class="item__img">
+									<img
+										class="svg-icon-2-dims"
+										src="@img/icons.svg#icon-2"
+										alt=""
+									/>
+								</div>
+								<div class="item__title">Вітамін В</div>
+								<div class="item__text">
+									При дефіциті порушується робота серце-судинного апарату, є
+									ризик серцевого нападу під час забігу
+								</div>
+							</div>
+							<div class="vitamins__item">
+								<div class="item__img">
+									<img
+										class="svg-icon-3-dims"
+										src="@img/icons.svg#icon-3"
+										alt=""
+									/>
+								</div>
+								<div class="item__title">Вітамін D</div>
+								<div class="item__text">
+									Дефіцит викликає порушення кальцій-фосфорного обміну, звідси –
+									травми і переломив
+								</div>
+							</div>
+							<div class="vitamins__item">
+								<div class="item__img">
+									<img
+										class="svg-icon-4-dims"
+										src="@img/icons.svg#icon-4"
+										alt=""
+									/>
+								</div>
+								<div class="item__title">Магній</div>
+								<div class="item__text">
+									Забезпечує правильну роботу м’язів і поглинання кисню
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/footer.html', {})
+		<script src="js/app.min.js"></script>
+	</body>
 </html>
