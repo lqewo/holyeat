@@ -3,6 +3,7 @@
 @import '_vars';
 @import '_global';
 @import 'header';
+@import 'footer';
 
 // Media
 @import 'media';
@@ -34,6 +35,7 @@
 	// .problem__inner-item
 
 	&__inner-item {
+		transition: all 0.5s;
 		margin-right: 20px;
 		padding: 20px 40px 0 30px;
 		max-width: 350px;
@@ -41,8 +43,12 @@
 		width: 100%;
 		background-color: #fff;
 		margin-bottom: 50px;
+
 		&:nth-child(3n) {
 			margin-right: 0;
+		}
+		&:hover {
+			box-shadow: 2px 2px 20px #dfdfdf;
 		}
 	}
 	.item {
@@ -312,3 +318,410 @@
 }
 
 // end vitamins
+
+//start offers
+.offers {
+	padding-bottom: 125px;
+	background-color: #fff;
+	// .offers__title
+
+	&__title {
+		padding: 123px 0 50px;
+		font-weight: 800;
+		font-size: 30px;
+		line-height: 129%;
+		color: #151519;
+	}
+
+	// .offers__inner
+
+	&__inner {
+		display: flex;
+		justify-content: start;
+		flex-wrap: wrap;
+	}
+
+	// .offers__inner-item
+
+	&__inner-item {
+		cursor: pointer;
+		border-radius: 10px;
+		padding: 35px 27px;
+		max-width: 350px;
+		background-image: url(../img/card-bg.png);
+		background-size: 350px 141px;
+		background-repeat: no-repeat;
+		border: 1px solid #ecebeb;
+		margin-right: 30px;
+
+		&:nth-child(3n) {
+			margin-right: 0;
+		}
+		&:focus {
+			background-size: auto;
+
+			.item__list-link {
+				color: #ffffff;
+				&::before {
+					content: url('../img/right-gray.svg');
+				}
+				&--off {
+					&::before {
+						content: url('../img/not-right-gray.svg');
+					}
+				}
+			}
+
+			.item__btn {
+				color: #fd576c;
+				background: #ffffff;
+			}
+		}
+	}
+
+	// .offers__infotext
+
+	&__infotext {
+		margin-top: 30px;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 150%;
+		color: #151519;
+	}
+
+	.item {
+		// .item__title
+
+		&__title {
+			margin-bottom: 12px;
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 150%;
+			color: #ffffff;
+		}
+
+		// .item__price-new
+
+		&__price-new {
+			display: inline;
+			font-weight: 800;
+			font-size: 30px;
+			line-height: 129%;
+			color: #ffffff;
+		}
+
+		// .item__price-old
+
+		&__price-old {
+			margin-left: 23px;
+			width: 50%;
+			font-weight: 500;
+			line-height: 150%;
+			font-size: 18px;
+			color: #ffffff;
+		}
+
+		// .item__list
+
+		&__list {
+			margin-top: 65px;
+		}
+
+		// .item__list-link
+
+		&__list-link {
+			position: relative;
+			padding-left: 32px;
+			padding-bottom: 22px;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 150%;
+			color: #151519;
+
+			&::before {
+				left: 0;
+				top: 0;
+				position: absolute;
+				content: url('../img/right.svg');
+			}
+		}
+
+		// .item__list-link--off
+
+		&__list-link--off {
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 150%;
+			color: #a8a7a7;
+
+			&::before {
+				position: absolute;
+				content: url('../img/not-right.svg');
+			}
+		}
+
+		// .item__btn
+
+		&__btn {
+			padding: 11px 39px;
+			font-weight: 600;
+			font-size: 20px;
+			line-height: 129.5%;
+			color: #ffffff;
+			background: #fd576c;
+			border-radius: 50px;
+		}
+	}
+}
+
+//end offers
+
+// start comment
+.comment {
+	margin-top: 125px;
+	margin-bottom: 173px;
+	// .comment__title
+
+	&__title {
+		@include title;
+		margin-bottom: 100px;
+	}
+
+	// .comment__inner
+
+	&__inner {
+		display: flex;
+		justify-content: start;
+	}
+
+	// .comment__inner-item
+
+	&__inner-item {
+		margin-right: 30px;
+		padding: 80px 58px 44px 45px;
+		max-width: 540px;
+		border: 1px solid #ecebeb;
+		border-radius: 10px;
+		position: relative;
+
+		&:nth-child(2n) {
+			margin-right: 0;
+		}
+	}
+
+	.item {
+		// .item__img
+
+		&__img {
+			position: absolute;
+			top: -50px;
+			left: 50px;
+		}
+
+		// .item__img--img
+
+		&__img--img {
+		}
+
+		// .item__text
+
+		&__text {
+			margin-bottom: 46px;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 150%;
+			color: #151519;
+		}
+
+		// .item__data
+
+		&__data {
+			font-weight: 600;
+			font-size: 15px;
+			line-height: 153%;
+			color: #777575;
+			padding-top: 22px;
+			border-top: 1px solid #ecebeb;
+		}
+
+		&__user {
+			// .item__name
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 150%;
+			color: #777575;
+			position: relative;
+			&-name {
+				display: inline;
+			}
+
+			// .item__star
+
+			&-star {
+				position: absolute;
+				right: 0;
+				top: 0;
+			}
+		}
+	}
+}
+
+// end comment
+
+// start diet
+.diet {
+	background: #f9fafc;
+	padding: 105px 0;
+	// .diet__inner
+
+	&__inner {
+		display: flex;
+		align-items: center;
+	}
+
+	// .diet__inner-item
+
+	&__inner-item {
+		max-width: 473px;
+		img {
+			max-width: 613px;
+		}
+	}
+
+	// .diet__inner--content
+
+	.item {
+		// .item__title
+
+		&__title {
+			font-weight: 800;
+			font-size: 30px;
+			line-height: 129%;
+			color: #151519;
+		}
+
+		// .item__text
+
+		&__text {
+			margin: 20px 0 30px;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 150%;
+			color: #151519;
+		}
+
+		// .item__link
+
+		&__link {
+			position: relative;
+			font-weight: 600;
+			font-size: 20px;
+			line-height: 129.5%;
+			color: #fd576c;
+			&::after {
+				position: absolute;
+				width: 24px;
+				height: 24px;
+				content: url('../img/arrow-right.svg');
+			}
+		}
+
+		// .item__img
+	}
+
+	&__inner--content {
+		margin-top: 44px;
+		display: flex;
+		justify-content: center;
+
+		.diet__inner-item {
+			background: #ffffff;
+			border-radius: 10px;
+			padding: 20px;
+			max-width: 540px;
+			min-height: 288px;
+			margin-right: 30px;
+			&:nth-child(2n) {
+				margin-right: 0;
+			}
+		}
+
+		.item {
+			&__title {
+				padding: 10px 0;
+				font-weight: 600;
+				font-size: 16px;
+				line-height: 150%;
+				color: #151519;
+			}
+
+			&__img {
+				margin-right: 0;
+				width: 50px;
+				height: 50px;
+			}
+			&__text {
+				margin: 0;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 150%;
+				color: #151519;
+			}
+		}
+	}
+}
+
+// end diet
+
+// start feedback
+.feedback {
+	margin: 160px 0;
+	// .feedback__inner
+
+	&__inner {
+		display: flex;
+		align-items: center;
+	}
+
+	// .feedback__img
+
+	&__img {
+	}
+}
+
+.content {
+	// .content__title
+
+	&__title {
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 800;
+		font-size: 30px;
+		line-height: 129%;
+		color: #151519;
+	}
+
+	// .content__text
+
+	&__text {
+		padding: 33px 0 44px;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 150%;
+		color: #151519;
+	}
+
+	// .content__btn
+
+	&__btn {
+		padding: 11px 33px;
+		background: #fd576c;
+		border-radius: 50px;
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 129.5%;
+		color: #ffffff;
+	}
+}
+
+// end feedback
