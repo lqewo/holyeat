@@ -83,19 +83,20 @@
 			}
 		}
 	}
-}
-
-@media (max-width: 476px) {
-	.header__inner-top {
-		position: fixed;
-		height: 50px;
+	.header__inner-top .wrapper {
+		height: auto;
 		background-color: #fff;
-		z-index: 50;
-		align-items: start;
+		position: fixed;
+		align-items: flex-start;
+		padding-top: 33px;
+		padding-bottom: 33px;
 	}
 	body.lock {
 		overflow: hidden;
 	}
+}
+
+@media (max-width: 476px) {
 	.header__burger-menu {
 		height: 100%;
 	}

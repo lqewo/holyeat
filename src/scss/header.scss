@@ -5,6 +5,7 @@
 	// .header__inner
 
 	&__inner-top .wrapper {
+		z-index: 50;
 		margin: 0 auto;
 		padding: 0 10px;
 		max-width: 1420px;
@@ -13,12 +14,12 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		border-bottom: 2px solid #ecebeb;
 	}
 
 	// .header__inner-top
 
 	&__inner-top {
-		border-bottom: 2px solid #ecebeb;
 		height: 90px;
 	}
 
@@ -72,6 +73,7 @@
 	// .header__img
 
 	&__img {
+		min-width: 0%;
 		max-width: 560px;
 		height: auto;
 	}

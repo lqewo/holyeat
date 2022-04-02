@@ -12,7 +12,17 @@ flsFunction.isWebp();
         e.preventDefault()
         $('.header__burger, .header__burger-menu' ).toggleClass('active');
         $('body').toggleClass('lock');
-    })
+
+        })
+
+    $('.header__burger-menu').on('click', function (e) {
+        e.preventDefault()
+        $(' .active' ).toggleClass('active');
+        $('body').toggleClass('lock');
+
+        })
+
+
 
 
     $(".item__user-star").rateYo({
