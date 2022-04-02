@@ -8,6 +8,13 @@ flsFunction.isWebp();
 
   $(function () {
 
+    $('.header__burger').on('click', function (e) {
+        e.preventDefault()
+        $('.header__burger, .header__burger-menu' ).toggleClass('active');
+        $('body').toggleClass('lock');
+    })
+
+
     $(".item__user-star").rateYo({
         rating: 5,
 		readOnly: true,
